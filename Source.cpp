@@ -103,10 +103,10 @@ void print_matrix(float*& matrix, int size)
 	}
 }
 
-int main()
+int main(int argc, char* argv[])
 {
 	FILE* m1, * m2, * mres;
-	const int size = 100;
+	const int size = atoi(argv[1]);
 	float* matrix1, * matrix2, * matrixres;
 
 	matrix1 = new float[size * size];
